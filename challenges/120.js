@@ -37,7 +37,7 @@
 // Implement groupBy. Use other existing functions on Array if you want.
 //
 
-function groupBy(arr, logic){
+function groupBy(arr, logic) {
   let obj = new Object();
   for ( let item of arr ) {
     obj[logic(item)] = [];
