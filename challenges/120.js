@@ -38,8 +38,15 @@
 //
 
 function groupBy(arr, logic){
+  let obj = new Object();
+  for ( let item of arr ) {
+    obj[logic(item)] = [];
+  }
+  for ( let item of arr ) {
+    obj[logic(item)].push(item);
+  }
   return(
-    // replace this line with your code
+    obj
   );
 }
 
